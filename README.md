@@ -1,4 +1,4 @@
-A simple shopping-cart written in ruby with TDD in mind, in order to run the application make sure you got ruby installed and RSpec. Please consult RSpec installing for  further information [How to install RSpec](https://relishapp.com/rspec/docs/gettingstarted)
+A simple shopping-cart written in ruby with TDD in mind, in order to run the application make sure you got ruby installed and RSpec. Please consult RSpec installation for further information [How to install RSpec](https://relishapp.com/rspec/docs/gettingstarted)
 
 This application should do the following tasks
 
