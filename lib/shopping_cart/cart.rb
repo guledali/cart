@@ -41,7 +41,6 @@ module ShoppingCart
       products_in_cart = []
       items_discount = []
       sum = 0
-      lineitem = nil
 
       items.each do |item|
         sum = sum + (item.product.price * item.quanitity)
