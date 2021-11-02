@@ -1,6 +1,7 @@
 module ShoppingCart
   class LineItem
-    attr_reader :product, :quanitity
+    attr_reader :product
+    attr_accessor :quanitity
 
     def initialize(product, quanitity)
       @product = product
@@ -8,12 +9,12 @@ module ShoppingCart
     end
 
     def increase
-      @quanitity = quanitity + 1
+      self.quanitity = quanitity + 1
       return @quanitity
     end
 
     def decrease
-      @quanitity = quanitity - 1
+      self.quanitity = quanitity - 1
       return @quanitity
     end
 
