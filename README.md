@@ -20,7 +20,7 @@ irb(main):002:0>
 3. Initialise the shopping_cart class 
 
 ```ruby
-   cart = ShoppingCart.call(id: 1, name: "jacket", price: 200) # note that these arguments are required
+   cart = ShoppingCart.call(id: 1, name: "jacket", price: 200) # note that these arguments are required!
 ```
 
 Please check the spec file `cart_spec.rb` for all available methods
