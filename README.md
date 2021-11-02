@@ -23,4 +23,17 @@ irb(main):002:0>
    cart = ShoppingCart.call(id: 1, name: "jacket", price: 200) # note that these arguments are required!
 ```
 
+4. Creating new product and line_item
+
+```ruby
+   require_relative("product.rb")
+   require_relative("line_item.rb")
+   ## create new product
+   ## create new line_item
+   product = ShoppingCart::Product.new(2, "pants", 200)
+   line_item = ShoppingCart::LineItem.new(product, 1)
+
+   cart.add(line_item)
+```
+
 Please check the spec file `cart_spec.rb` for all available methods
