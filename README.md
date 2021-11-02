@@ -23,4 +23,4 @@ irb(main):002:0>
    cart = ShoppingCart.call(id: 1, name: "jacket", price: 200) # note that these arguments are required
 ```
 
-Please check the spec file cart_spec.rb for all available methods
+Please check the spec file `cart_spec.rb` for all available methods
