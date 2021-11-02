@@ -1,5 +1,5 @@
 require("rspec")
-require_relative("../lib/product.rb")
+require_relative("../lib/shopping_cart/product.rb")
 
 RSpec.describe "testing product" do
   before do
