@@ -4,6 +4,9 @@ require_relative("./line_item.rb")
 
 module ShoppingCart
   class << self
+    # @param id [Integer] Record id
+    # @param name [String] Product name
+    # @param price [Integer] Product price
     def call(id:, name:, price:)
       cart = ShoppingCart::Cart.new()
       product = ShoppingCart::Product.new(id, name, price)
