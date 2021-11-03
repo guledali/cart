@@ -36,4 +36,4 @@ irb(main):002:0>
    cart.add(line_item)
 ```
 
-Please check the spec file `cart_spec.rb` for all available methods
+Check the spec file `cart_spec.rb` for all available methods
