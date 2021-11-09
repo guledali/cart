@@ -1,11 +1,11 @@
 require("rspec")
-require_relative("../lib/shopping_cart/line_item.rb")
-require_relative("../lib/shopping_cart/product.rb")
+require_relative("../lib/cart/line_item.rb")
+require_relative("../lib/cart/product.rb")
 
 RSpec.describe "testing line_item" do
   before do
-    @product = ShoppingCart::Product.new(1, "jacket", 300)
-    @line_item = ShoppingCart::LineItem.new(@product, 1)
+    @product = Cart::Product.new(1, "jacket", 300)
+    @line_item = Cart::LineItem.new(@product, 1)
   end
 
   it "should increase the quantity" do

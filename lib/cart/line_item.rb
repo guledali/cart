@@ -1,4 +1,4 @@
-module ShoppingCart
+module Cart
   class LineItem
     attr_reader :product
     attr_accessor :quanitity

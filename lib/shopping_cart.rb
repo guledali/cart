@@ -1,6 +1,6 @@
-require_relative("./cart.rb")
-require_relative("./product.rb")
-require_relative("./line_item.rb")
+require_relative("./cart/cart.rb")
+require_relative("./cart/product.rb")
+require_relative("./cart/line_item.rb")
 
 module ShoppingCart
   class << self
@@ -9,9 +9,9 @@ module ShoppingCart
     # @param name [String] Product name
     # @param price [Integer] Product price
     def call(id:, name:, price:)
-      cart = ShoppingCart::Cart.new()
-      product = ShoppingCart::Product.new(id, name, price)
-      line_item = ShoppingCart::LineItem.new(product, 1)
+      cart = Cart::Cart.new()
+      product = Cart::Product.new(id, name, price)
+      line_item = Cart::LineItem.new(product, 1)
       cart.add(line_item)
       return cart
     end

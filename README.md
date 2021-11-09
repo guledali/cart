@@ -10,7 +10,7 @@ The `ShoppingCart` class serves as base class for the following tasks,
 - [X] Should make a purshase
 
 
-1. cd into lib folder and then cd into shopping_cart folder
+1. cd into lib folder
 2. Start the irb session by typing irb and require shopping_cart module by paste the following code snippet
 
 ```ruby
@@ -28,13 +28,12 @@ irb(main):002:0>
 4. Creating new product and line_item
 
 ```ruby
-   require_relative("product.rb")
-   require_relative("line_item.rb")
    ## create new product
+   product = Cart::Product.new(2, "pants", 200)
    ## create new line_item
-   product = ShoppingCart::Product.new(2, "pants", 200)
-   line_item = ShoppingCart::LineItem.new(product, 1)
+   line_item = Cart::LineItem.new(product, 1)
 
+   ## adding the new line_item to cart
    cart.add(line_item)
 ```
 

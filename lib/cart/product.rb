@@ -1,4 +1,4 @@
-module ShoppingCart
+module Cart
   class Product
     attr_accessor :id, :name, :price
 

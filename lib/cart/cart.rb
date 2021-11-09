@@ -1,4 +1,4 @@
-module ShoppingCart
+module Cart
   class Cart
     attr_accessor :items, :list_item
 

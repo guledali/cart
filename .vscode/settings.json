@@ -1,0 +1,6 @@
+{
+  "rubyTestExplorer.rspecDirectory": "./spec/",
+  "rubyTestExplorer.testFramework": "rspec",
+  "rubyTestExplorer.rspecCommand": "rspec",
+  "rubyTestExplorer.logpanel": true
+}
